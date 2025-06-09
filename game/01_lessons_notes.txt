@@ -1,0 +1,16 @@
+
+
+LESSON 01
+
+We learned the basics of Ren'py. We've learned where to download the software and how to install it. We've learned how to download the Visual Code editor and how to install the Ren'py language extension.
+
+We learned how to create a default new game in Ren'py. We've learned how to add images to the game. We've learned how to use images in the game.
+
+We've learned how to define speaking characters in the game. We've learned how to apply transforms in the game.
+
+COMMANDS LEARNED
+
+define [USED TO CREATE CONSTANT VARIABLES WHICH ARE NOT SUPPOSED TO CHANGE DURING A GAME]
+image [USED TO CREATE IMAGE OBJECTS]
+show [USED TO SHOW VISUAL OBJECTS ON TOP OF THE BACKGROUND LAYER]
+scene [USED TO SHOW A NEW VISUAL OBJECT IN THE BACKGROUND LAYER, USING IT RESETS ALL OTHER VISUALS ON THE SCREEN]
