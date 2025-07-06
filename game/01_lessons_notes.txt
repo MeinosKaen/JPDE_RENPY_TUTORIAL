@@ -21,7 +21,7 @@ We learned the basics of flow control in Ren'py, by using the 'pause' command.
 
 We learned the basics of transitions, and some of the built-in visual transition commands of Ren'py.
 
-We leanred the basics of moving images through transforms, and the basics of warpers.
+We learned the basics of moving images through transforms, and the basics of warpers.
 
 COMMANDS LEARNED
 
