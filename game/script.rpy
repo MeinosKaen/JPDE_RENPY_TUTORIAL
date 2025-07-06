@@ -5,27 +5,30 @@
 
 define e = Character("Eileen")
 define p = Character("Penny")
+define b = Character("Blake")
 
 # The game starts here.
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene vale_day
-
+    pause 2.0
+    scene vale_day with dissolve
+    pause 0.5
     show Penny happy:
-        zoom 0.5 xalign 0.5 yalign 1.0
+        zoom 0.5 xalign 0.33 yalign 1.0
+    show Blake neutral:
+        zoom 0.5 yalign 1.0 xalign 0.66
+    with pixellate
+    pause 0.5
+    b "Hello, my name is Blake and... I guess welcome to this tutorial?"
 
-    p "Salutations! My name is Penny, and this is the JPDE Ren'py Tutorial series!"
+    show Penny:
+        easein 3.0 xalign 0.66
+    show Blake:
+        easeout 3.0 xalign 0.33
+    
+    pause 0.5
 
-    scene vale_night
-
-    show Penny blush
-
-    p "We're going to learn how to make games! Once you add a story, pictures, and music, you can release it to the world!"
+    p "Thank you for joining me, friend Blake! I hope everyone learns a lot from this video!"
 
     # This ends the game.
 
