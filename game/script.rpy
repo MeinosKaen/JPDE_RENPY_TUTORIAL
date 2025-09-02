@@ -7,6 +7,10 @@ define e = Character("Eileen")
 define p = Character("Penny")
 define b = Character("Blake")
 
+init python:
+    renpy.music.register_channel("LoNoise","bgs")
+    renpy.music.register_channel("sound2","sfx",loop=False)
+
 # The game starts here.
 
 label start:
@@ -27,8 +31,29 @@ label start:
         easeout 3.0 xalign 0.33
     
     pause 0.5
-
+    play music bgm_whimsy
     p "Thank you for joining me, friend Blake! I hope everyone learns a lot from this video!"
+
+    b "I mean... What is there to learn? It's a Visual Novel engine. Those things are easy-mode, as they say."
+
+    pause 0.5
+    play LoNoise bgs_wind
+    show Penny surprise
+
+    pause 1.0
+
+    show Penny angry:
+        easein 0.3 xalign 0.5
+    pause 0.2
+    play sound sfx_punch
+    pause 0.1
+    play sound2 sfx_shock
+    show Blake surprise:
+        easein 0.05 xalign 0.73
+    
+    p "Friend Blake, I am afraid you underestimate the effort and talent that goes into making Visual Novels!"
+    stop music
+    b "DID YOU JUST SMACK ME ON THE HEAD?!"
 
     # This ends the game.
 

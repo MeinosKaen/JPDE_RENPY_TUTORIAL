@@ -32,3 +32,22 @@ pixellate [BUILT-IN VISUAL TRANSITION WHICH REPLACES TWO IMAGES USING A PIXELLAT
 linear x.x [WARPER WHICH INSTRUCTS A CHANGE OF VALUE TO KEEP THE SAME SPEED THROUGHOUT THE CHANGE]
 easein x.x [WARPER WHICH INSTRUCTS A CHANGE OF VALUE TO START FAST AND FINISH SLOW]
 easeout x.x [WARPER WHICH INSTRUCTS A CHANGE OF VALUE TO START SLOW AND FINISH FAST]
+
+LESSON 03
+
+We learned why music and sound design are so important in Visual Novels, especially for beginners.
+
+We learned the basics of using music and sounds in Ren'Py.
+
+We learned how to register a custom audio channel in Ren'Py.
+
+We learned how to set default audio levels for Ren'Py mixers.
+
+COMMANDS LEARNED
+
+play channel file [USED TO INSTRUCT THE ENGINE TO PLAY A SOUND ON A CHANNEL]
+stop channel [USED TO INSTRUCT THE ENGINE TO STOP PLAYING A SOUND ON A CHANNEL]
+
+renpy.music.register_channel() [USED TO INSTRUCT THE ENGINE TO REGISTER A CUSTOM AUDIO CHANNEL]
+
+default preferences.volume.mixer = x.x [USED TO INSTRUCT THE ENGINE TO SET THE DEFAULT LEVEL OF A CHANNEL AT A DEFAULT FLOAT VALUE]

@@ -48,8 +48,11 @@ define build.name = "JPDE_RENPY_TUTORIAL"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
+default preferences.volume.music = 0.66
+default preferences.volume.sfx = 0.75
+default preferences.volume.bgs = 0.33
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
