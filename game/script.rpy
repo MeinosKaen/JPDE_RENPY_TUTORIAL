@@ -4,8 +4,8 @@
 # name of the character.
 
 define e = Character("Eileen")
-define p = Character("Penny")
-define b = Character("Blake")
+define p = Character("Penny",what_prefix="\"",what_suffix="\"")
+define b = Character("Blake",what_prefix="\"",what_suffix="\"")
 
 init python:
     renpy.music.register_channel("LoNoise","bgs")
@@ -32,9 +32,9 @@ label start:
     
     pause 0.5
     play music bgm_whimsy
-    p "Thank you for joining me, friend Blake! I hope everyone learns a lot from this video!"
+    p "\"Thank you for joining me, friend Blake! {b}I hope everyone learns a lot from this video{/b}!\""
 
-    b "I mean... What is there to learn? It's a Visual Novel engine. Those things are easy-mode, as they say."
+    b "\"I mean... What is there to learn? It's a Visual Novel engine. {i}Those things are easy-mode, {size=12}as they say.{/size}{/i}\""
 
     pause 0.5
     play LoNoise bgs_wind
@@ -54,7 +54,39 @@ label start:
     p "Friend Blake, I am afraid you underestimate the effort and talent that goes into making Visual Novels!"
     stop music
     b "DID YOU JUST SMACK ME ON THE HEAD?!"
+    call pondering
+    pause 1.0
+    jump kitty_choice
+
+label violence:
+    pause 1.0
+    show Blake angry with dissolve
+    b "You asked for it!"
+    play sound2 sfx_punch
+    pause 0.2
+    scene black
+    pause 1.0
 
     # This ends the game.
 
     return
+
+label knowledge:
+    pause 1.0
+    show Blake surprise
+    b "Okay, maybe I don't know enough about Visual Novels... Would you care to teach me, Penny?"
+    pause 1.0
+    show Penny happy with dissolve
+    pause 1.0
+    scene black
+    pause 1.0
+
+    return
+
+menu kitty_choice:
+
+    "You realize this means war.":
+        jump violence
+    
+    "Maybe I was too hasty.":
+        jump knowledge
