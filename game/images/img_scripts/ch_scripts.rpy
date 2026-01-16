@@ -1,14 +1,40 @@
 # Penny Ch Images
 
-image Penny happy = "images/chs/penny/happy.png"
-image Penny cry = "images/chs/penny/cry.png"
-image Penny blush = "images/chs/penny/blush.png"
-image Penny blank = "images/chs/penny/blank.png"
-image Penny angry = "images/chs/penny/angry.png"
-image Penny laugh = "images/chs/penny/laugh.png"
-image Penny pain = "images/chs/penny/pain.png"
-image Penny sad = "images/chs/penny/sad.png"
-image Penny surprise = "images/chs/penny/surprise.png"
+image Penny_body_base = "images/chs/penny/body_base.png"
+
+image Penny_exp_happy = "images/chs/penny/happy.png"
+image Penny_exp_cry = "images/chs/penny/cry.png"
+image Penny_exp_blush = "images/chs/penny/blush.png"
+image Penny_exp_blank = "images/chs/penny/blank.png"
+image Penny_exp_angry = "images/chs/penny/angry.png"
+image Penny_exp_laugh = "images/chs/penny/laugh.png"
+image Penny_exp_pain = "images/chs/penny/pain.png"
+image Penny_exp_sad = "images/chs/penny/sad.png"
+image Penny_exp_surprise = "images/chs/penny/surprise.png"
+
+layeredimage Penny:
+    group base:
+        attribute base default:
+            "Penny_body_base"
+    group face:
+        attribute happy default:
+            "Penny_exp_happy"
+        attribute cry:
+            "Penny_exp_cry"
+        attribute blush:
+            "Penny_exp_blush"
+        attribute blank:
+            "Penny_exp_blank"
+        attribute angry:
+            "Penny_exp_angry"
+        attribute laugh:
+            "Penny_exp_laugh"
+        attribute pain:
+            "Penny_exp_pain"
+        attribute sad:
+            "Penny_exp_sad"
+        attribute surprise:
+            "Penny_exp_surprise"
 
 # Blake Ch Images
 

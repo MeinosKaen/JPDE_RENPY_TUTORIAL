@@ -17,7 +17,7 @@ label start:
     pause 2.0
     scene vale_day with dissolve
     pause 0.5
-    show Penny happy:
+    show Penny:
         zoom 0.5 xalign 0.33 yalign 1.0
     show Blake neutral:
         zoom 0.5 yalign 1.0 xalign 0.66
